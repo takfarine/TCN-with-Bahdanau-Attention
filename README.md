@@ -28,3 +28,18 @@ This code provides an implementation of a Temporal Convolutional Block (TCN) int
 To use the TCN block with Bahdanau Attention in your architecture, simply instantiate and integrate it as you would with any other Keras layer:
 x = TCNBlock(filters, kernel_size, dilation_rate)(input_tensor)
 
+Ensure you specify the necessary parameters like filters, kernel_size, and dilation_rate.
+Tips:
+
+    Positioning: Place the TCN block in your model where it can effectively leverage its receptive field and attention mechanism.
+
+    Performance: Attention mechanisms can increase computational costs. Monitor training time and adjust accordingly.
+
+    Hyperparameter Tuning: Parameters such as the number of attention units, filters, kernel size, dilation rate might need tuning based on the dataset.
+
+    Attention Visualization: You can visualize the attention weights to gain insights into the sequence parts your model finds important.
+
+    Training Stability: Consider gradient clipping or other stabilization techniques if you encounter any training instabilities.
+
+    Complexity: This block increases model complexity. Ensure you have enough data to train the model and prevent overfitting.
+
