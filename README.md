@@ -1,5 +1,4 @@
-<h4><center>:sunglasses:Temporal Convolutional Network (TCN) with Bahdanau Attention:sunglasses:</center></h4>
-
+# Temporal Convolutional Block with Bahdanau Attention
 
 ## Overview
 This repository contains an implementation of a Temporal Convolutional Block (TCN) enhanced with the Bahdanau Attention mechanism. TCNs offer powerful sequence modeling capabilities due to their ability to process long sequences and achieve expansive receptive fields. Incorporating attention mechanisms ensures the model captures not just temporal dependencies but also emphasizes important parts of the sequence.
@@ -30,4 +29,5 @@ To incorporate the TCN block with Bahdanau Attention into your architecture, ins
 
 ```python
 x = TCNBlock(filters, kernel_size, dilation_rate)(input_tensor)
+
 
