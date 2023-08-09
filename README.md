@@ -20,7 +20,7 @@ This code provides an implementation of a Temporal Convolutional Block (TCN) int
 ## Usage:
 
 To use the TCN block with Bahdanau Attention in your architecture, simply instantiate and integrate it as you would with any other Keras layer:
-x = TCNBlock(filters, kernel_size, dilation_rate)(input_tensor)
+        x = TCNBlock(filters, kernel_size, dilation_rate)(input_tensor)
 
 Ensure you specify the necessary parameters like filters, kernel_size, and dilation_rate.
 Tips:
