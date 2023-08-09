@@ -29,6 +29,9 @@ To incorporate the TCN block with Bahdanau Attention into your architecture, ins
 
 ```python
 x = TCNBlock(filters, kernel_size, dilation_rate)(input_tensor)
+```
+
+
 
 ## Parameters to Define
 
