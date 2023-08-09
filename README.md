@@ -30,4 +30,33 @@ To incorporate the TCN block with Bahdanau Attention into your architecture, ins
 ```python
 x = TCNBlock(filters, kernel_size, dilation_rate)(input_tensor)
 
+## Parameters to Define
+
+When you're using this block, make sure you define the key parameters:
+
+- `filters`: Specifies the dimensionality of the output space (i.e., the number of output filters in the convolution).
+  
+- `kernel_size`: An integer or tuple/list of a single integer, specifying the length of the 1D convolution window.
+  
+- `dilation_rate`: An integer or tuple/list of a single integer, specifying the dilation rate to use for dilated convolution.
+
+## Tips & Recommendations
+
+- **Positioning:** For best results, place the TCN block in your model where it can make full use of its expansive receptive field combined with the attention mechanism.
+  
+- **Performance Concerns:** Remember that attention mechanisms can be resource-intensive. Regularly monitor your training times and adjust as required.
+  
+- **Hyperparameter Tuning:** Different datasets may benefit from different configurations. Regularly test and tweak parameters such as attention units, `filters`, `kernel_size`, and `dilation_rate`.
+  
+- **Attention Visualization:** A peek into the attention weights can offer critical insights. Visualize them to understand which parts of the sequence your model finds most important.
+  
+- **Training Stability:** Deep networks can sometimes be unstable in training. If you encounter such issues, consider using gradient clipping or explore other stabilization methods.
+  
+- **Model Complexity:** The added attention mechanism increases the complexity of the TCN block. Ensure you have a sufficiently large and diverse dataset for training to counteract potential overfitting.
+
+## Contributions
+
+Community contributions can enhance this implementation further. Feel free to fork this repository, submit pull requests, or raise any issues if you encounter challenges or see potential improvements.
+
+
 
