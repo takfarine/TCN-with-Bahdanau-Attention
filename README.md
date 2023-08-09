@@ -11,14 +11,14 @@ This code provides an implementation of a Temporal Convolutional Block (TCN) int
 * Batch Normalization and Activation:
         Helps in stabilizing the activations of the model.
 
-     * Efficient Channel Attention (via ECA):
+* Efficient Channel Attention (via ECA):
         Provides a channel-wise attention mechanism, highlighting specific channels based on the input.
 
-     * Bahdanau Attention:
+* Bahdanau Attention:
         Weighs the importance of different parts/timesteps of the sequence. It enables the model to focus on specific parts of the input sequence when producing an output.
 
-     * Pointwise Convolution:
+* Pointwise Convolution:
         Used for changing the dimensionality of the output, acting as a feature transformation.
 
-     *  Residual Connection:
+*  Residual Connection:
         Helps in avoiding the vanishing gradient problem, especially in deep networks, and often leads to faster convergence.
