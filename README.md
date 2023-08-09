@@ -5,10 +5,10 @@
 This code provides an implementation of a Temporal Convolutional Block (TCN) integrated with the Bahdanau Attention mechanism. TCNs are powerful tools for sequence modeling tasks due to their ability to handle long sequences and have an expansive receptive field. When combined with the attention mechanism, this model not only captures temporal dependencies but also weighs the importance of different parts of the sequence.
 
 #### Components:
-*Causal Convolution (via CausalDWConv1D):
+* Causal Convolution (via CausalDWConv1D):
         Ensures that the convolution operations are causal, i.e., does not violate the temporal order of sequences.
 
-*Batch Normalization and Activation:
+* Batch Normalization and Activation:
         Helps in stabilizing the activations of the model.
 
      * Efficient Channel Attention (via ECA):
