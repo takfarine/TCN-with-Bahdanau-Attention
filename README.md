@@ -22,7 +22,7 @@ This code provides an implementation of a Temporal Convolutional Block (TCN) int
 
 *  Residual Connection:
         Helps in avoiding the vanishing gradient problem, especially in deep networks, and often leads to faster convergence.
-
+-
 ## Usage:
 
 To use the TCN block with Bahdanau Attention in your architecture, simply instantiate and integrate it as you would with any other Keras layer:
