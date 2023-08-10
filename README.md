@@ -28,7 +28,7 @@ This repository contains an implementation of a Temporal Convolutional Block (TC
 To incorporate the TCN block with Bahdanau Attention into your architecture, instantiate and use it like any Keras layer:
 
 ```python
-x = TCNBlock(filters, kernel_size, dilation_rate)(input_tensor)
+x = TCNBlock(filters, kernel_size, dilation_rate, drop_rate=0.0, activation='relu')(input_tensor)
 ```
 
 
