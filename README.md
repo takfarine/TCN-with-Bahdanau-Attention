@@ -51,6 +51,6 @@ When you're using this block, make sure you define the key parameters:
 
 Community contributions can enhance this implementation further. Feel free to fork this repository, submit pull requests, or raise any issues if you encounter challenges or see potential improvements.
 
-For questions or feedback, please reach out to [your_email@example.com](mailto:takfarinesguergueb@gmail.com).
+For questions or feedback, please reach out to [takfarinesguergueb@gmail.com](mailto:takfarinesguergueb@gmail.com).
 
 
